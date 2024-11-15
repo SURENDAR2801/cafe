@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Sign In</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #141414;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    /* Container styling */
+    .container {
+      width: 100%;
+      max-width: 400px;
+      padding: 40px;
+      background-color: #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
+
+    .container h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Form styling */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-control {
+      margin-bottom: 20px;
+    }
+
+    .form-control input {
+      width: 100%;
+      padding: 10px;
+      background-color: #444;
+      border: 1px solid #555;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .form-control input:focus {
+      outline: none;
+      border-color: #e50914;
+    }
+
+    /* Button styling */
+    .btn-submit {
+      background-color: #e50914;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn-submit:hover {
+      background-color: #f6121d;
+    }
+
+    /* Link styling */
+    .form-footer {
+      margin-top: 20px;
+    }
+
+    .form-footer a {
+      color: #b3b3b3;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .form-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Sign In</h1>
+    <form action="#" method="post">
+      <div class="form-control">
+        <input type="email" placeholder="Email or phone number" required>
+      </div>
+      <div class="form-control">
+        <input type="password" placeholder="Password" required>
+      </div>
+      <button type="submit" class="btn-submit">Sign In</button>
+      <div class="form-footer">
+        <p><a href="#">Need help?</a></p>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
